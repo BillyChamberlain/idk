@@ -1,16 +1,11 @@
-/* ==========================
-   Soft Pink Pattern Background
-   ========================== */
-
 html,
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-
+    box-sizing: border-box;
     background-color: #fff4f8;
 
-    /* Pattern + gradient */
     background-image:
         radial-gradient(circle, rgba(255, 255, 255, 0.819) 2px, transparent 2px),
         radial-gradient(circle, rgba(255, 182, 193, 0.36) 2px, transparent 2px),
@@ -25,29 +20,41 @@ body {
         0 0,
         20px 20px,
         center;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
-h1{
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
     display: block;
     text-align: center;
     color: rgb(234, 84, 162);
     position: relative;
     padding-bottom: 20px;
+    margin-top: 0;
 }
-.outer{
+
+.outer {
     display: flex;
     position: relative;
-    inset: 0;         /* Shorthand for top: 0, right: 0, bottom: 0, left: 0 */
-    margin: auto;     /* Magical centering trick for positioned elements */
-    width: 350px;     /* Element must have a specified width */
-    height: 450px;    /* Element must have a specified height */
+    width: 90%;
+    max-width: 500px;
+    height: 450px;
     background-color: black;
     border-radius: 50px;
     justify-content: center;
     color: rgb(233, 232, 232);
     flex-wrap: wrap;
 }
-img{
+
+img {
     display: block;
     width: 70%;
     height: auto;
@@ -55,12 +62,14 @@ img{
     top: 20px;
     border-radius: 30px;
 }
-.outer #fck{
+
+.outer #fck {
     display: block;
     position: absolute;
-    bottom: 15%;
+    bottom: 22%;
 }
-.yes{
+
+.yes {
     width: 25%;
     height: 12%;
     align-items: center;
@@ -73,16 +82,28 @@ img{
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
-.yes:hover{
+
+.no {
+    width: 25%;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 0, 50);
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.yes:hover,
+.no:hover {
     transform: scale(1.2); 
 }
-.no:hover{
-    transform: scale(1.2);
-}
-.no{
-    cursor: pointer;
-}
-a{
+
+a {
     color: inherit;
     display: flex;
     text-decoration: none;

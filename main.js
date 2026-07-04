@@ -28,9 +28,9 @@ lolno.className = "no";
 parentDiv.appendChild(lolno);
 
 lolno.addEventListener("click", function() {
-    width /= 2;
-    height /= 2;
-    font_size /=2;
+    width /= 1.3;
+    height /= 1.3;
+    font_size /= 1.3;
     pos_left = getRand(-20, 100);
     pos_bottom = getRand(-30, 100);
     lolno.style.width = `${width}%`;

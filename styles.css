@@ -108,3 +108,25 @@ a {
     display: flex;
     text-decoration: none;
 }
+
+#submit{
+    display: flex;
+    position: relative;
+    background-color: grey;
+    width: 50%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#submit:hover{
+    transform: scale(1.2)
+}
+#answerz{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    color:black;
+}

@@ -32,10 +32,11 @@ h1{
     text-align: center;
     color: rgb(234, 84, 162);
     position: relative;
+    padding-bottom: 20px;
 }
 .outer{
     display: flex;
-    position: absolute;
+    position: relative;
     inset: 0;         /* Shorthand for top: 0, right: 0, bottom: 0, left: 0 */
     margin: auto;     /* Magical centering trick for positioned elements */
     width: 350px;     /* Element must have a specified width */

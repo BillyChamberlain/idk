@@ -1,6 +1,6 @@
 // --- CONFIGURATION ---
-const OWNER = 'YOUR_GITHUB_USERNAME'; // Change to your GitHub username
-const REPO = 'YOUR_REPO_NAME';             // Change to your repository name
+const OWNER = 'BillyChamberlain'; // Change to your GitHub username
+const REPO = 'idk';             // Change to your repository name
 const FILE_PATH = 'database.json';         // The file where data will save
 
 // --- ELEMENT SELECTION ---
